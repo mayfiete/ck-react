@@ -25,7 +25,7 @@ function RenderHomeImage() {
     return (
         <div className="container">
             <Card>
-                <CardImg top src="/assets/images/dancing-montage.jpg" alt="Card image cap" />
+                <CardImg class="" src="/assets/images/dancing-montage.jpg" alt="Card image cap" />
                 <CardBody>
                     <CardTitle>See our inspiration</CardTitle>
                     <CardText>
@@ -41,22 +41,25 @@ function RenderHomeImage() {
 
 function Home(props) {
     return (
-        <div className="container">
-            <div className="row">
-                <div className="col-md m-1 d-flex">
-                    <RenderCard item={props.persona} />
-                </div>
-                <div className="col-md m-1  d-flex">
-                    <RenderCard item={props.wiki} />
-                </div>
-                <div className="col-md m-1 d-flex">
-                    <RenderCard item={props.organization} />
-                </div>
-                <div className="col-md m-1 d-flex">
-                    <RenderHomeImage />
+        <React.Fragment>
+            <div className="container">
+                <div className="row">
+                    <div className="col-md m-1 d-flex">
+                        <RenderCard item={props.persona} />
+                    </div>
+                    <div className="col-md m-1 d-flex">
+                        <RenderCard item={props.process} />
+                    </div>
+                    <div className="col-md m-1  d-flex">
+                        <RenderCard item={props.wiki} />
+                    </div>
                 </div>
             </div>
-        </div>
+
+            <div className="col-md pt-5 d-flex" style={{ backgroundColor: "#d3d3d3" }}>
+                <RenderHomeImage />
+            </div>
+        </React.Fragment>
     );
 }
 

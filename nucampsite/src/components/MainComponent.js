@@ -33,7 +33,7 @@ class Main extends Component {
                     persona={this.state.personas.filter(persona => persona.featured)[0]}
                     wiki={this.state.wikis.filter(wiki => wiki.featured)[0]}
                     organization={this.state.organizations.filter(organization => organization.featured)[0]}
-
+                    process={this.state.processes.filter(process => process.featured)[0]}
                 />
             );
         }

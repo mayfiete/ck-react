@@ -6,10 +6,14 @@ export const PROCESSES =
         {
             id: 0,
             personaId: 0,
+            name: "The first step is to love your community. You're already crushing this!",
             rating: 5,
             text: "What a magnificent view!",
             author: "Tinus Lorvaldes",
-            date: "2018-10-25T16:30Z"
+            date: "2018-10-25T16:30Z",
+            image: "/assets/images/together-we-create.jpg",
+            description: "Community Kanban is a marketplace that supports Technologists get experience while helping the community",
+            featured: true
         },
         {
             id: 1,
@@ -17,7 +21,8 @@ export const PROCESSES =
             rating: 4,
             text: "The campground was beautiful, but the bugs could bite sometimes.",
             author: "Brennen Ech",
-            date: "2017-06-17T03:33Z"
+            date: "2017-06-17T03:33Z",
+            featured: false
         },
         {
             id: 2,
@@ -25,7 +30,8 @@ export const PROCESSES =
             rating: 5,
             text: "I caught a world-record-breaking trout here on my last visit.",
             author: "McKenzie Sebastian",
-            date: "2019-02-18T18:12Z"
+            date: "2017-06-17T03:33Z",
+            featured: false
         },
         {
             id: 3,
@@ -33,7 +39,8 @@ export const PROCESSES =
             rating: 5,
             text: "A wonderful place to reconnect with nature.",
             author: "Jordan Runn",
-            date: "2019-08-04T20:11Z"
+            date: "2017-06-17T03:33Z",
+            featured: false
         },
         {
             id: 4,
@@ -41,7 +48,8 @@ export const PROCESSES =
             rating: 4,
             text: "The stars at night were a revelation!",
             author: "Ann Dabramov",
-            date: "2018-07-23T19:44Z"
+            date: "2017-06-17T03:33Z",
+            featured: false
         },
         {
             id: 5,
@@ -49,7 +57,8 @@ export const PROCESSES =
             rating: 4,
             text: "The campground was beautiful, but the bugs could bite sometimes.",
             author: "Brennen Ech",
-            date: "2017-06-17T03:33Z"
+            date: "2017-06-17T03:33Z",
+            featured: false
         },
         {
             id: 6,
@@ -57,7 +66,8 @@ export const PROCESSES =
             rating: 5,
             text: "I caught a world-record-breaking trout here on my last visit.",
             author: "McKenzie Sebastian",
-            date: "2019-02-18T18:12Z"
+            date: "2017-06-17T03:33Z",
+            featured: false
         },
         {
             id: 7,
@@ -65,7 +75,8 @@ export const PROCESSES =
             rating: 5,
             text: "A wonderful place to reconnect with nature.",
             author: "Jordan Runn",
-            date: "2019-08-04T20:11Z"
+            date: "2017-06-17T03:33Z",
+            featured: false
         },
         {
             id: 8,
@@ -73,7 +84,8 @@ export const PROCESSES =
             rating: 4,
             text: "The stars at night were a revelation!",
             author: "Ann Dabramov",
-            date: "2018-07-23T19:44Z"
+            date: "2017-06-17T03:33Z",
+            featured: false
         },
         {
             id: 9,
@@ -81,7 +93,8 @@ export const PROCESSES =
             rating: 5,
             text: "What a magnificent view!",
             author: "Tinus Lorvaldes",
-            date: "2018-10-25T16:30Z"
+            date: "2017-06-17T03:33Z",
+            featured: false
         },
         {
             id: 10,
@@ -89,7 +102,8 @@ export const PROCESSES =
             rating: 5,
             text: "I caught a world-record-breaking trout here on my last visit.",
             author: "McKenzie Sebastian",
-            date: "2019-02-18T18:12Z"
+            date: "2017-06-17T03:33Z",
+            featured: false
         },
         {
             id: 11,
@@ -97,7 +111,8 @@ export const PROCESSES =
             rating: 5,
             text: "A wonderful place to reconnect with nature.",
             author: "Jordan Runn",
-            date: "2019-08-04T20:11Z"
+            date: "2017-06-17T03:33Z",
+            featured: false
         },
         {
             id: 12,
@@ -105,7 +120,8 @@ export const PROCESSES =
             rating: 4,
             text: "The stars at night were a revelation!",
             author: "Ann Dabramov",
-            date: "2018-07-23T19:44Z"
+            date: "2017-06-17T03:33Z",
+            featured: false
         },
         {
             id: 13,
@@ -113,7 +129,8 @@ export const PROCESSES =
             rating: 5,
             text: "What a magnificent view!",
             author: "Tinus Lorvaldes",
-            date: "2018-10-25T16:30Z"
+            date: "2017-06-17T03:33Z",
+            featured: false
         },
         {
             id: 14,
@@ -121,7 +138,8 @@ export const PROCESSES =
             rating: 4,
             text: "The campground was beautiful, but the bugs could bite sometimes.",
             author: "Brennen Ech",
-            date: "2017-06-17T03:33Z"
+            date: "2017-06-17T03:33Z",
+            featured: false
         },
         {
             id: 15,
@@ -129,7 +147,8 @@ export const PROCESSES =
             rating: 5,
             text: "A wonderful place to reconnect with nature.",
             author: "Jordan Runn",
-            date: "2019-08-04T20:11Z"
+            date: "2017-06-17T03:33Z",
+            featured: false
         },
         {
             id: 16,
@@ -137,7 +156,8 @@ export const PROCESSES =
             rating: 4,
             text: "The stars at night were a revelation!",
             author: "Ann Dabramov",
-            date: "2018-07-23T19:44Z"
+            date: "2017-06-17T03:33Z",
+            featured: false
         },
         {
             id: 17,
@@ -145,7 +165,8 @@ export const PROCESSES =
             rating: 5,
             text: "What a magnificent view!",
             author: "Tinus Lorvaldes",
-            date: "2018-10-25T16:30Z"
+            date: "2017-06-17T03:33Z",
+            featured: false
         },
         {
             id: 18,
@@ -153,7 +174,8 @@ export const PROCESSES =
             rating: 4,
             text: "The campground was beautiful, but the bugs could bite sometimes.",
             author: "Brennen Ech",
-            date: "2017-06-17T03:33Z"
+            date: "2017-06-17T03:33Z",
+            featured: false
         },
         {
             id: 19,
@@ -161,6 +183,7 @@ export const PROCESSES =
             rating: 5,
             text: "I caught a world-record-breaking trout here on my last visit.",
             author: "McKenzie Sebastian",
-            date: "2019-02-18T18:12Z"
+            date: "2017-06-17T03:33Z",
+            featured: false
         }
     ]

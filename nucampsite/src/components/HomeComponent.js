@@ -47,7 +47,7 @@ function Home(props) {
                     <RenderCard item={props.persona} />
                 </div>
                 <div className="col-md m-1  d-flex">
-                    <RenderCard item={props.promotion} />
+                    <RenderCard item={props.wiki} />
                 </div>
                 <div className="col-md m-1 d-flex">
                     <RenderCard item={props.organization} />

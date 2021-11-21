@@ -11,7 +11,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import { PERSONAS } from '../shared/personas';
 import { PROCESSES } from '../shared/processes';
 import { ORGANIZATIONS } from '../shared/organizations';
-import { PROMOTIONS } from '../shared/promotions';
+import { WIKIS } from '../shared/wikis';
 
 
 class Main extends Component {
@@ -21,7 +21,7 @@ class Main extends Component {
             personas: PERSONAS,
             processes: PROCESSES,
             organizations: ORGANIZATIONS,
-            promotions: PROMOTIONS
+            wikis: WIKIS
         };
     }
 
@@ -31,7 +31,7 @@ class Main extends Component {
             return (
                 <Home
                     persona={this.state.personas.filter(persona => persona.featured)[0]}
-                    promotion={this.state.promotions.filter(promotion => promotion.featured)[0]}
+                    wiki={this.state.wikis.filter(wiki => wiki.featured)[0]}
                     organization={this.state.organizations.filter(organization => organization.featured)[0]}
 
                 />

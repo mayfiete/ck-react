@@ -17,17 +17,17 @@ function RenderPersona({ persona }) {
     )
 }
 
-function RenderComments({ comments }) {
-    if (comments) {
+function RenderProcesses({ processes }) {
+    if (processes) {
         return (
             <div className="col-md-5 m-1">
-                <h4>Comments</h4>
+                <h4>Processes</h4>
                 {
-                    comments.map(comment => {
+                    processes.map(process => {
                         return (
-                            <div key={comment.id}>
-                                <p>{comment.text}</p>
-                                <p>{new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(Date.parse(comment.date)))}</p>
+                            <div key={process.id}>
+                                <p>{process.text}</p>
+                                <p>{new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(Date.parse(process.date)))}</p>
                             </div>
                         )
                     })
@@ -59,7 +59,7 @@ function PersonaInfo(props) {
                 </div>
                 <div className="row">
                     <RenderPersona persona={props.persona} />
-                    <RenderComments comments={props.comments} />
+                    <RenderProcesses processes={props.processes} />
                 </div>
             </div>
         );

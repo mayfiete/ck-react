@@ -9,7 +9,7 @@ import Contact from './ContactComponent';
 import About from './AboutComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { PERSONAS } from '../shared/personas';
-import { COMMENTS } from '../shared/comments';
+import { PROCESSES } from '../shared/processes';
 import { PARTNERS } from '../shared/partners';
 import { PROMOTIONS } from '../shared/promotions';
 
@@ -19,7 +19,7 @@ class Main extends Component {
         super(props);
         this.state = {
             personas: PERSONAS,
-            comments: COMMENTS,
+            processes: PROCESSES,
             partners: PARTNERS,
             promotions: PROMOTIONS
         };
@@ -42,7 +42,7 @@ class Main extends Component {
             return (
                 <PersonaInfo
                     persona={this.state.personas.filter(persona => persona.id === +match.params.personaId)[0]}
-                    comments={this.state.comments.filter(comment => comment.personaId === +match.params.personaId)}
+                    processes={this.state.processes.filter(process => process.personaId === +match.params.personaId)}
                 />
             );
         }

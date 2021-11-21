@@ -1,7 +1,7 @@
 
 // Featured nonprofits
 
-export const PARTNERS = [
+export const ORGANIZATIONS = [
     {
         id: 0,
         name: "Bootstrap Outfitters",
@@ -25,8 +25,8 @@ export const PARTNERS = [
     },
     {
         id: 3,
-        name: "Node Outdoor Apparel",
-        image: "/assets/images/node-logo.png",
+        name: "Special Olympics",
+        image: "/assets/images/area31.jpg",
         featured: true,
         description: "From polar fleeces to swimsuits, hiking boots to waders, a visit to Node will be sure to get you covered."
     }

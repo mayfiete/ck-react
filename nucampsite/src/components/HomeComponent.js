@@ -50,7 +50,7 @@ function Home(props) {
                     <RenderCard item={props.promotion} />
                 </div>
                 <div className="col-md m-1 d-flex">
-                    <RenderCard item={props.partner} />
+                    <RenderCard item={props.organization} />
                 </div>
                 <div className="col-md m-1 d-flex">
                     <RenderHomeImage />

@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 
 function About(props) {
 
-    const partners = props.partners.map(partner => {
+    const organizations = props.organizations.map(organization => {
         return (
-            <Media tag="li" key={partner.id}>
-                <RenderPartner partner={partner} />
+            <Media tag="li" key={organization.id}>
+                <RenderOrganization organization={organization} />
             </Media>
         );
     });
@@ -63,11 +63,11 @@ function About(props) {
             </div>
             <div className="row row-content">
                 <div className="col-12">
-                    <h3>Community Partners</h3>
+                    <h3>Community organizations</h3>
                 </div>
                 <div className="col mt-4">
                     <Media list>
-                        {partners}
+                        {organizations}
                     </Media>
                 </div>
             </div>
@@ -75,14 +75,14 @@ function About(props) {
     );
 }
 
-function RenderPartner({ partner }) {
-    if (partner) {
+function RenderOrganization({ organization }) {
+    if (organization) {
         return (
             <React.Fragment>
-                <Media object src={partner.image} alt={partner.name} width="150" />
+                <Media object src={organization.image} alt={organization.name} width="150" />
                 <Media body className="ml-5 mb-4" >
-                    <Media heading>{partner.name}</Media>
-                    <Media>{partner.description}</Media>
+                    <Media heading>{organization.name}</Media>
+                    <Media>{organization.description}</Media>
                 </Media>
 
             </React.Fragment>

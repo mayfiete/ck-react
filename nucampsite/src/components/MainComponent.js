@@ -10,7 +10,7 @@ import About from './AboutComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { PERSONAS } from '../shared/personas';
 import { PROCESSES } from '../shared/processes';
-import { PARTNERS } from '../shared/partners';
+import { ORGANIZATIONS } from '../shared/organizations';
 import { PROMOTIONS } from '../shared/promotions';
 
 
@@ -20,7 +20,7 @@ class Main extends Component {
         this.state = {
             personas: PERSONAS,
             processes: PROCESSES,
-            partners: PARTNERS,
+            organizations: ORGANIZATIONS,
             promotions: PROMOTIONS
         };
     }
@@ -32,7 +32,7 @@ class Main extends Component {
                 <Home
                     persona={this.state.personas.filter(persona => persona.featured)[0]}
                     promotion={this.state.promotions.filter(promotion => promotion.featured)[0]}
-                    partner={this.state.partners.filter(partner => partner.featured)[0]}
+                    organization={this.state.organizations.filter(organization => organization.featured)[0]}
 
                 />
             );
@@ -55,7 +55,7 @@ class Main extends Component {
                     <Route exact path='/directory' render={() => <Directory personas={this.state.personas} />} />
                     <Route path='/directory/:personaId' component={personaWithId} />
                     <Route exact path='/contactus' component={Contact} />
-                    <Route exact path='/aboutus' render={() => <About partners={this.state.partners} />} />
+                    <Route exact path='/aboutus' render={() => <About organizations={this.state.organizations} />} />
 
                     <Redirect to='/home' />
                 </Switch>

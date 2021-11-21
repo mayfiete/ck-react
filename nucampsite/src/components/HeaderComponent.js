@@ -2,6 +2,8 @@
 import React, { Component } from 'react';
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+import Media from 'reactstrap/lib/Media';
+import Card from 'reactstrap/lib/Card';
 
 class Header extends Component {
     constructor(props) {
@@ -26,12 +28,13 @@ class Header extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col">
-                                <h1> Nucamp </h1>
-                                <h2> A better way to camp </h2>
+                                <h1> Community Kanban </h1>
+                                <h2> You can't spell COMMUNITY without I.T. </h2>
                             </div>
                         </div>
                     </div>
                 </Jumbotron>
+
                 <Navbar dark sticky="top" expand="md">
                     <div className="container">
                         <NavbarBrand className="mr-auto" href="/"><img src="/assets/images/logo.png" height="30" width="30" alt="NuCamp Logo" /></NavbarBrand>
@@ -62,6 +65,8 @@ class Header extends Component {
                         </Collapse>
                     </div>
                 </Navbar>
+
+
             </React.Fragment>
         )
     }

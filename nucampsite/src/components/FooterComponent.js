@@ -2,18 +2,29 @@
 import React from 'react';
 //import CardFooter from 'reactstrap/lib/CardFooter';
 import { Link } from 'react-router-dom';
+import { Card, CardImg, CardImgOverlay, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+
+
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Arvo&family=Hind:wght@300&family=Raleway&display=swap" rel="stylesheet"></link>
 
 function Footer(props) {
     return (
         <footer className="site-footer">
-            <div className="container">
+
+            <div className="container-fluid">
+                <div className="text-xl-left" style={{ fontSize: "1.5rem", fontFamily: "Architects daughter, cursive", color: "blue" }}>
+                    As you grow older, you will discover that you have two hands — one for helping yourself, the other for helping others.
+                </div>
+                <Card>
+                    <CardImg top src="/assets/images/dancing-montage.jpg" alt="Card image cap" />
+                </Card>
                 <div className="row">
                     <div className="col-4 col-sm-2 offset-1">
                         <h5>Links</h5>
                         <ul className="list-unstyled">
                             <li><Link to='/home'>Home</Link></li>
                             <li><Link to='/directory'>Directory</Link></li>
-                            <li><Link to='/aboutus'>About</Link></li>
+                            <li><Link to='/agoutis'>About</Link></li>
                             <li><Link to='/contactus'>Contact</Link></li>
                         </ul>
                     </div>
@@ -30,7 +41,7 @@ function Footer(props) {
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer >
     );
 }
 

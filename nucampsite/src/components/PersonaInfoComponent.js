@@ -1,16 +1,16 @@
 
 
 import React from 'react';
-import { Card, CardImg, CardText, CardBody, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-function RenderCampsite({ campsite }) {
+function RenderPersona({ persona }) {
     return (
         <div className="col-md-5 m-1" >
             <Card>
-                <CardImg top src={campsite.image} alt={campsite.name} />
+                <CardImg top src={persona.image} alt={persona.name} />
                 <CardBody>
-                    <CardText> {campsite.description} </CardText>
+                    <CardText> {persona.description} </CardText>
                 </CardBody>
             </Card>
         </div>
@@ -40,25 +40,25 @@ function RenderComments({ comments }) {
 
 
 
-// Inside its render method, check if an object with the name "campsite" 
+// Inside its render method, check if an object with the name "persona" 
 // (passed in via props) can be evaluated as truthy 
 // (e.g. is not null, is not undefined)
-function CampsiteInfo(props) {
-    if (props.campsite) { // passing in campsite via props from parent component
+function PersonaInfo(props) {
+    if (props.persona) { // passing in persona via props from parent component
         return (
             <div className="container">
                 <div className="row">
                     <div className="col">
                         <Breadcrumb>
                             <BreadcrumbItem><Link to="/directory">Directory</Link></BreadcrumbItem>
-                            <BreadcrumbItem active>{props.campsite.name}</BreadcrumbItem>
+                            <BreadcrumbItem active>{props.persona.name}</BreadcrumbItem>
                         </Breadcrumb>
-                        <h2>{props.campsite.name}</h2>
+                        <h2>{props.persona.name}</h2>
                         <hr />
                     </div>
                 </div>
                 <div className="row">
-                    <RenderCampsite campsite={props.campsite} />
+                    <RenderPersona persona={props.persona} />
                     <RenderComments comments={props.comments} />
                 </div>
             </div>
@@ -71,4 +71,4 @@ function CampsiteInfo(props) {
 
 
 
-export default CampsiteInfo;
+export default PersonaInfo;

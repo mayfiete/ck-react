@@ -1,3 +1,6 @@
+
+// Featured nonprofits
+
 export const PARTNERS = [
     {
         id: 0,

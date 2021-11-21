@@ -1,3 +1,6 @@
+
+// comments about the process
+
 export const PROMOTIONS = [
     {
         id: 0,

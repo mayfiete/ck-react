@@ -4,13 +4,13 @@ import { Card, CardImg, CardImgOverlay, CardTitle, Breadcrumb, BreadcrumbItem } 
 import { Link } from 'react-router-dom';
 
 
-function RenderDirectoryItem({ campsite }) {
+function RenderDirectoryItem({ persona }) {
     return (
         <Card>
-            <Link to={`/directory/${campsite.id}`}>
-                <CardImg width="100%" src={campsite.image} alt={campsite.name} />
+            <Link to={`/directory/${persona.id}`}>
+                <CardImg width="100%" src={persona.image} alt={persona.name} />
                 <CardImgOverlay>
-                    <CardTitle>{campsite.name}</CardTitle>
+                    <CardTitle>{persona.name}</CardTitle>
                 </CardImgOverlay>
             </Link>
         </Card>
@@ -19,10 +19,10 @@ function RenderDirectoryItem({ campsite }) {
 
 function Directory(props) {
 
-    const directory = props.campsites.map(campsite => {
+    const directory = props.personas.map(persona => {
         return (
-            <div key={campsite.id} className="col-md-5 m-1">
-                <RenderDirectoryItem campsite={campsite} />
+            <div key={persona.id} className="col-md-5 m-1">
+                <RenderDirectoryItem persona={persona} />
             </div>
         );
     });

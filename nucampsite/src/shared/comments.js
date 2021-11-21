@@ -1,5 +1,5 @@
 
-// Process steps 
+// Process steps - add an overview steps
 
 export const COMMENTS = 
 [

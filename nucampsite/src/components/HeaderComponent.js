@@ -2,8 +2,7 @@
 import React, { Component } from 'react';
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
-import Media from 'reactstrap/lib/Media';
-import Card from 'reactstrap/lib/Card';
+
 
 class Header extends Component {
     constructor(props) {
@@ -37,7 +36,7 @@ class Header extends Component {
 
                 <Navbar dark sticky="top" expand="md">
                     <div className="container">
-                        <NavbarBrand className="mr-auto" href="/"><img src="/assets/images/newlogo.png" height="50" width="150" alt="Logo" /></NavbarBrand>
+                        <NavbarBrand className="mr-auto" href="/"><img src="/assets/images/whitelogo.png" height="50" width="150" alt="Logo" /></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>

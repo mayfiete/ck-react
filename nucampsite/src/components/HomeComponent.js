@@ -56,7 +56,7 @@ function Home(props) {
                 </div>
             </div>
 
-            <div className="col-md pt-5 d-flex" style={{ backgroundColor: "#d3d3d3" }}>
+            <div className="col-md pt-5 pb-5 d-flex" style={{ backgroundColor: "#d3d3d3" }}>
                 <RenderHomeImage />
             </div>
         </React.Fragment>

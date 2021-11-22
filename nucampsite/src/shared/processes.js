@@ -11,7 +11,7 @@ export const PROCESSES =
             text: "What a magnificent view!",
             author: "Tinus Lorvaldes",
             date: "2018-10-25T16:30Z",
-            image: "/assets/images/together-we-create.jpg",
+            image: "/assets/images/men-hugging.jpg",
             description: "Community Kanban is a marketplace that supports Technologists get experience while helping the community",
             featured: true
         },

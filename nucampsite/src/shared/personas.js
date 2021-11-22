@@ -8,7 +8,7 @@ export const PERSONAS = [
         image: "/assets/images/woman-smiling-glasses.jpg",
         elevation: 1233,
         featured: true,
-        description: "Nonprofits connect with Community-oriented technologist. Technologist connect with causes they love. It's a win-win.",
+        description: "Nonprofits connect with Community-oriented technologists. Technologists connect with causes they love. It's a win-win.",
         comments: [
             {
                 id: 0,

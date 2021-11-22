@@ -12,7 +12,7 @@ export const PROCESSES =
             author: "Tinus Lorvaldes",
             date: "2018-10-25T16:30Z",
             image: "/assets/images/men-hugging.jpg",
-            description: "Community Kanban is a marketplace that supports Technologists get experience while helping the community",
+            description: "Community Kanban is a marketplace that provides technologist with the opportunity to gain experience while helping the community.",
             featured: true
         },
         {

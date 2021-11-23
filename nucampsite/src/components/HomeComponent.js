@@ -2,6 +2,7 @@
 import React from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 
+// RenderCard.js
 function RenderCard({ item }) {
     {
         return (
@@ -20,6 +21,7 @@ function RenderCard({ item }) {
         );
     }
 }
+
 
 function RenderHomeImage() {
     return (

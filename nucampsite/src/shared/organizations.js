@@ -26,6 +26,7 @@ export const ORGANIZATIONS = [
     {
         id: 3,
         name: "Featured Nonprofit: Special Olympics (Area 31) ",
+        category: "Nonprofits",
         image: "/assets/images/area31.jpg",
         featured: true,
         description: "From polar fleeces to swimsuits, hiking boots to waders, a visit to Node will be sure to get you covered."

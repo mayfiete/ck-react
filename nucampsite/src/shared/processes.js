@@ -8,6 +8,7 @@ export const PROCESSES =
             personaId: 0,
             name: "The first step is to love your community. You're already crushing this!",
             rating: 5,
+            category: "How does it work?",
             text: "What a magnificent view!",
             author: "Tinus Lorvaldes",
             date: "2018-10-25T16:30Z",

@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
+import CardImgOverlay from 'reactstrap/lib/CardImgOverlay';
 
 // RenderCard.js
 function RenderCard({ item }) {
@@ -9,13 +10,14 @@ function RenderCard({ item }) {
             <React.Fragment>
                 <Card>
                     <CardImg src={item.image} alt={item.name} />
+                    <CardImgOverlay className="d-flex flex-column justify-content-center">
+                        <CardTitle>{item.category}</CardTitle>
+                    </CardImgOverlay>
                     <CardBody>
                         <CardTitle>{item.name}</CardTitle>
                         <CardText>{item.description}</CardText>
                     </CardBody>
                 </Card>
-
-
             </React.Fragment >
 
         );

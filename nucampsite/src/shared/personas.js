@@ -4,8 +4,9 @@
 export const PERSONAS = [
     {
         id: 0,
-        name: "Connecting Nonprofits with Community-Oriented Technologists",
+        name: "We are community-oriented technologist that want to help nonprofits achieve their goals.",
         image: "/assets/images/woman-smiling-glasses.jpg",
+        category: "Who we are",
         elevation: 1233,
         featured: true,
         description: "Nonprofits connect with Community-oriented technologists. Technologists connect with causes they love. It's a win-win.",

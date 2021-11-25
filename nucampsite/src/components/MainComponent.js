@@ -7,33 +7,33 @@ import Footer from './FooterComponent';
 import Home from './HomeComponent';
 import Contact from './ContactComponent';
 import About from './AboutComponent';
-import { Switch, Route, Redirect } from 'react-router-dom';
-import { PERSONAS } from '../shared/personas';
-import { PROCESSES } from '../shared/processes';
-import { ORGANIZATIONS } from '../shared/organizations';
-import { WIKIS } from '../shared/wikis';
+import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+
+const mapStateToProps = state => {
+    return {
+        personas: state.personas,
+        organizations: state.organizations,
+        processes: state.processes,
+        wikis: state.wikis
+    };
+};
+
+
 
 
 class Main extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            personas: PERSONAS,
-            processes: PROCESSES,
-            organizations: ORGANIZATIONS,
-            wikis: WIKIS
-        };
-    }
+
 
 
     render() {
         const HomePage = () => {
             return (
                 <Home
-                    persona={this.state.personas.filter(persona => persona.featured)[0]}
-                    wiki={this.state.wikis.filter(wiki => wiki.featured)[0]}
-                    organization={this.state.organizations.filter(organization => organization.featured)[0]}
-                    process={this.state.processes.filter(process => process.featured)[0]}
+                    persona={this.props.personas.filter(persona => persona.featured)[0]}
+                    wiki={this.props.wikis.filter(wiki => wiki.featured)[0]}
+                    organization={this.props.organizations.filter(organization => organization.featured)[0]}
+                    process={this.props.processes.filter(process => process.featured)[0]}
                 />
             );
         }
@@ -41,8 +41,8 @@ class Main extends Component {
         const personaWithId = ({ match }) => {
             return (
                 <PersonaInfo
-                    persona={this.state.personas.filter(persona => persona.id === +match.params.personaId)[0]}
-                    processes={this.state.processes.filter(process => process.personaId === +match.params.personaId)}
+                    persona={this.props.personas.filter(persona => persona.id === +match.params.personaId)[0]}
+                    processes={this.props.processes.filter(process => process.personaId === +match.params.personaId)}
                 />
             );
         }
@@ -52,10 +52,10 @@ class Main extends Component {
                 <Header />
                 <Switch>
                     <Route path='/home' component={HomePage} />
-                    <Route exact path='/directory' render={() => <Directory personas={this.state.personas} />} />
+                    <Route exact path='/directory' render={() => <Directory personas={this.props.personas} />} />
                     <Route path='/directory/:personaId' component={personaWithId} />
                     <Route exact path='/contactus' component={Contact} />
-                    <Route exact path='/aboutus' render={() => <About organizations={this.state.organizations} />} />
+                    <Route exact path='/aboutus' render={() => <About organizations={this.props.organizations} />} />
 
                     <Redirect to='/home' />
                 </Switch>
@@ -66,4 +66,4 @@ class Main extends Component {
 }
 
 // this file is a module because there is an export 
-export default Main;
+export default withRouter(connect(mapStateToProps)(Main));

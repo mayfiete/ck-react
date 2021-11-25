@@ -25,7 +25,7 @@ function Directory(props) {
                 <RenderDirectoryItem persona={persona} />
             </div>
         );
-    });
+    }).slice(1, 4);
     return (
         <div className="container">
             <div className="row">

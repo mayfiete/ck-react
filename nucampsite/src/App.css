@@ -30,9 +30,16 @@ h2 {
 }
 
 .card-img-overlay .card-title {
-  color: white;
-  border: #CEC8FF solid 1px;
-  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  background-color: rgb(16, 0, 245, 0.5);
+  border: rgb(177, 161, 161);
+  border-radius: 2px;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .row-content {

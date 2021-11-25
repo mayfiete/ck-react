@@ -10,7 +10,7 @@ function RenderCard({ item }) {
             <React.Fragment>
                 <Card>
                     <CardImg src={item.image} alt={item.name} />
-                    <CardImgOverlay className="d-flex flex-column justify-content-center">
+                    <CardImgOverlay className="d-flex flex-column justify-content-center" >
                         <CardTitle>{item.category}</CardTitle>
                     </CardImgOverlay>
                     <CardBody>
@@ -32,6 +32,7 @@ function RenderHomeImage() {
                 <CardImg class="" src="/assets/images/dancing-montage.jpg" alt="Card image cap" />
                 <CardBody>
                     <CardTitle>See our inspiration</CardTitle>
+
                     <CardText>
                         As you grow older, you will discover that you have two hands — one for helping yourself, the other for helping others.
                         <hr></hr>
@@ -42,6 +43,7 @@ function RenderHomeImage() {
         </div>
     );
 }
+
 
 function Home(props) {
     return (

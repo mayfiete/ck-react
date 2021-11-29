@@ -206,10 +206,6 @@ function Wiki(props) {
         <div className="container">
             <div className="row">
                 <div className="col">
-                    <Breadcrumb>
-                        <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
-                        <BreadcrumbItem active>Wiki</BreadcrumbItem>
-                    </Breadcrumb>
                     <h2>Wiki</h2>
                     <hr />
                 </div>

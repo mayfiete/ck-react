@@ -1,23 +1,29 @@
 
 import React from 'react';
-import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import CardImgOverlay from 'reactstrap/lib/CardImgOverlay';
+import { Link } from 'react-router-dom'
 
 // RenderCard.js
 function RenderCard({ item }) {
     {
+        var link = <a Link to="/home"> Learn More </a >;
         return (
             <React.Fragment>
+
                 <Card>
                     <CardImg src={item.image} alt={item.name} />
-                    <CardImgOverlay className="d-flex flex-column justify-content-center" >
-                        <CardTitle>{item.category}</CardTitle>
-                    </CardImgOverlay>
+                    <Link to={`/directory`}>
+                        <CardImgOverlay className="d-flex flex-column justify-content-center pb-5" >
+                            <CardTitle>{item.category}</CardTitle>
+                        </CardImgOverlay>
+                    </Link>
                     <CardBody>
-                        <CardTitle>{item.name}</CardTitle>
+                        <CardTitle>{item.name} </CardTitle>
                         <CardText>{item.description}</CardText>
                     </CardBody>
                 </Card>
+
             </React.Fragment >
 
         );

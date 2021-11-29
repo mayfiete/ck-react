@@ -7,6 +7,7 @@ import Footer from './FooterComponent';
 import Home from './HomeComponent';
 import Contact from './ContactComponent';
 import About from './AboutComponent';
+import Wiki from './WikiComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
@@ -56,7 +57,7 @@ class Main extends Component {
                     <Route path='/directory/:personaId' component={personaWithId} />
                     <Route exact path='/contactus' component={Contact} />
                     <Route exact path='/aboutus' render={() => <About organizations={this.props.organizations} />} />
-
+                    <Route exact path='/wiki' render={() => <Wiki wikis={this.props.wikis} />} />
                     <Redirect to='/home' />
                 </Switch>
                 <Footer />

@@ -33,7 +33,7 @@ function RenderHomeImage() {
     return (
         <div className="container">
             <Card>
-                <CardImg class="" src="/assets/images/dancing-montage.jpg" alt="Card image cap" />
+                <CardImg class="d-flex flex-column justify-content-center pb-5" src="/assets/images/dancing-montage.jpg" alt="Card image cap" />
                 <CardBody>
                     <CardTitle>See our inspiration</CardTitle>
 
@@ -48,20 +48,44 @@ function RenderHomeImage() {
     );
 }
 
-function RenderLogoCard() {
+function RenderFeaturedNonprofit() {
     return (
         <div className="container">
             <Card>
-                <CardImg class="" src="/assets/images/Community Kanban-logos_transparent.png" alt="Card image cap" />
-                <CardBody>
-                    <CardTitle>How we see the world!</CardTitle>
+                <CardImgOverlay className="d-flex flex-column justify-content-top pb-5"
+                    style={{
+                        fontSize: "1.25em",
+                        fontWeight: "bold",
+                        fontFamily: "Arial, Helvetica, sans-serif",
+                        fontStyle: "italic",
+                        color: "gray"
+                    }}>
+                    Featured Nonprofit
+                </CardImgOverlay>
+                <CardImg class="d-flex flex-column justify-content-center pb-5" src="/assets/images/fullcirclegriefcenter.jpg"
+                    alt="Card image cap" />
+            </Card>
+        </div>
+    );
+}
 
-                    <CardText>
-                        As you grow older, you will discover that you have two hands — one for helping yourself, the other for helping others.
-                        <hr></hr>
-                        - Audrey Hepburn
-                    </CardText>
-                </CardBody>
+
+function RenderFeaturedTechnologist() {
+    return (
+        <div className="container">
+            <Card>
+                <CardImgOverlay className="d-flex flex-column justify-content-top pb-5"
+                    style={{
+                        fontSize: "1.25em",
+                        fontWeight: "bold",
+                        fontFamily: "Arial, Helvetica, sans-serif",
+                        fontStyle: "italic",
+                        color: "white"
+                    }}>
+                    Featured Technologist
+                </CardImgOverlay>
+                <CardImg class="d-flex flex-column justify-content-center pb-5" src="/assets/images/CKHero.png"
+                    alt="Card image cap" />
             </Card>
         </div>
     );
@@ -84,14 +108,22 @@ function Home(props) {
                     </div>
                 </div>
             </div>
-
-            <div className="col-md pt-5 pb-5 d-flex" style={{ backgroundColor: "#d3d3d3" }}>
-                <RenderHomeImage />
+            <div style={{ backgroundColor: "#d3d3d3" }}>
+                <div className="container">
+                    <div className="row ">
+                        <div className="col-md d-flex d-flex pb-5 pt-5" padding="0">
+                            < RenderHomeImage />
+                        </div>
+                        <div className="col-md d-flex pb-5 pt-5" padding="0">              
+                            <RenderFeaturedNonprofit />
+                        </div>
+                        <div className="col-md d-flex pb-5 pt-5" padding="0">
+                            <RenderFeaturedTechnologist />
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className="col-md d-flex" style={{ backgroundColor: "#d3d3d3" }}>
-                <RenderLogoCard />
-            </div>
-        </React.Fragment>
+        </React.Fragment >
     );
 }
 

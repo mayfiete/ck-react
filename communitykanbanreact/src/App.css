@@ -25,13 +25,13 @@ h3,
   font-size: 1.25rem;
 }
 
-h2 {
+h3 {
   color: #3046C5;
 }
 
 .card-img-overlay .card-title {
   color: rgb(255, 255, 255);
-  background-color: rgb(16, 0, 245);
+  background-color: gray;
   border: rgb(177, 161, 161);
   border-radius: 2px;
   padding: 0.5rem;
@@ -50,21 +50,25 @@ h2 {
 
 .site-footer {
   background-image: linear-gradient(rgb(2, 2, 2));
-  background-color: rgb(255, 251, 251);
+  background-color: "grey";
   padding: 20px 0;
 }
 
 .jumbotron {
   margin: 0;
   padding: 15px;
-  background-image: linear-gradient(to right, #0f160d, #070a11, #4c504f);
+  background-image: linear-gradient(to right, navy, lightblue, white);
   color: white;
 }
 
 .jumbotron h2 {
-  color: #CEC8FF;
+  color: rgb(241, 151, 241);
 }
 
 .navbar-dark {
-  background-color: #4b4949;
+  background-color: rgb(129, 11, 129);
+}
+
+.reduce-space {
+  display: inline-block;
 }

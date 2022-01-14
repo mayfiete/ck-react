@@ -109,20 +109,27 @@ function Home(props) {
                 </div>
             </div>
             <div style={{ backgroundColor: "#d3d3d3" }}>
-                <div className="container">
-                    <div className="row ">
-                        <div className="col-md d-flex d-flex pb-5 pt-5" padding="0">
-                            < RenderHomeImage />
-                        </div>
-                        <div className="col-md d-flex pb-5 pt-5" padding="0">              
-                            <RenderFeaturedNonprofit />
-                        </div>
-                        <div className="col-md d-flex pb-5 pt-5" padding="0">
-                            <RenderFeaturedTechnologist />
-                        </div>
+                <div className="container ">
+                    <div className="d-flex flex-column justify-content-center pt-5 pb-5">
+                        < RenderHomeImage />
                     </div>
                 </div>
             </div>
+            <div
+                class="container d-flex flex-column justify-content-center pb-5"
+                style={{
+                    backgroundColor: "white"
+                }}>
+                <div className="row d-flex ">
+                    <div className="col-md d-flex pb-5 pt-5">
+                        <RenderFeaturedNonprofit />
+                    </div>
+                    <div className="col-md d-flex pb-5 pt-5">
+                        <RenderFeaturedTechnologist />
+                    </div>
+                </div>
+            </div>
+
         </React.Fragment >
     );
 }

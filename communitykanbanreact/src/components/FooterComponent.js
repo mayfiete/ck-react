@@ -9,8 +9,8 @@ import { Card, CardImg, CardImgOverlay, CardTitle, Breadcrumb, BreadcrumbItem } 
 
 function Footer(props) {
     return (
-        <footer className="site-footer">
-            <div className="container">
+        <footer className="site-footer" style={{ backgroundColor: "#d3d3d3" }}>
+            < div className="container" >
                 <div className="row">
                     <div className="col-4 col-sm-2 offset-1">
                         <h5>Links</h5>

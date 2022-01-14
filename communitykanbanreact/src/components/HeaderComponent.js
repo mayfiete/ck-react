@@ -44,15 +44,20 @@ class Header extends Component {
                 <Jumbotron fluid>
                     <div className="container">
                         <div className="row">
-                            <div className="col">
+                            <img src="assets/images/whitelogo.png"
+                                alt="logo"
+                                className="img-fluid mx-auto d-block"
+                                height="40%"
+                                width="40%"
+                            />
+                            <div className="col pt-2">
                                 <h1> Community Kanban </h1>
-                                <h2> You can't spell COMMMUNITY without I.T. </h2>
+                                <h3> You can't spell COMMMUNITY without I.T. </h3>
                             </div>
                         </div>
                     </div>
                 </Jumbotron>
                 <Navbar dark sticky="top" expand="md"
-
                 >
                     <div className="container">
 

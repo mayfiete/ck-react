@@ -26,8 +26,10 @@ function RenderProcesses({ processes }) {
                     processes.map(process => {
                         return (
                             <div key={process.id}>
-                                <p>{process.text}</p>
-                                <p>{new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(Date.parse(process.date)))}</p>
+                                <ul className="list-group">
+                                    <p>+ {process.text}</p>
+                                </ul>
+
                             </div>
                         )
                     })

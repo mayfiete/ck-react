@@ -15,34 +15,34 @@ export const PERSONAS = [
                 id: 0,
                 rating: 5,
                 text: "What a magnificent view!",
-                author: "Tinus Lorvaldes",
+                author: "Community Kanban",
                 date: "2018-10-25T16:30Z"
             },
             {
                 id: 1,
                 rating: 4,
-                text: "The campground was beautiful, but the bugs could bite sometimes.",
-                author: "Brennen Ech",
+                text: "Tell us about the problem you are trying to solve. ",
+                author: "Community Kanban",
                 date: "2017-06-17T03:33Z"
             },
             {
                 id: 2,
                 rating: 5,
-                text: "I caught a world-record-breaking trout here on my last visit.",
+                text: "Look through our the tech solutions we've accumulated. For example, if you are looking for a website, let us know if you see an example you like.",
                 author: "McKenzie Sebastian",
                 date: "2019-02-18T18:12Z"
             },
             {
                 id: 3,
                 rating: 5,
-                text: "A wonderful place to reconnect with nature.",
+                text: "A Community Kanban Project Manager will reach out to you to help you get started.",
                 author: "Jordan Runn",
                 date: "2019-08-04T20:11Z"
             },
             {
                 id: 4,
                 rating: 4,
-                text: "The stars at night were magnificent!",
+                text: "We will do our thing. Provide us feedback on our progress and we'll get to a great solution together.",
                 author: "Ann Dabramov",
                 date: "2018-07-23T19:44Z"
             }
@@ -54,14 +54,13 @@ export const PERSONAS = [
         image: "/assets/images/men-hugging.jpg",
         elevation: 1233,
         featured: false,
-        description: "Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.",
+        description: "You love your community. Let's work together to make sure your technology helps you achieve your goals.",
         comments: [
             {
                 id: 0,
-                rating: 5,
-                text: "What a magnificent view!",
-                author: "Tinus Lorvaldes",
-                date: "2018-10-25T16:30Z"
+                text: "Tell us about the problem you are trying to solve. ",
+                author: "Community Kanban",
+                date: "2017-06-17T03:33Z"
             },
             {
                 id: 1,

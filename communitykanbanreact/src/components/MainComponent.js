@@ -10,6 +10,7 @@ import About from './AboutComponent';
 import Wiki from './WikiComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
+import SideBar from './SideBarComponent';
 
 const mapStateToProps = state => {
     return {
@@ -48,6 +49,7 @@ class Main extends Component {
         return (
             <div>
                 <Header />
+                <SideBar />
                 <Switch>
                     <Route path='/home' component={HomePage} />
                     <Route exact path='/directory' render={() => <Directory personas={this.props.personas} />} />

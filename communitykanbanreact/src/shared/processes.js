@@ -7,94 +7,39 @@ export const PROCESSES =
             id: 0,
             personaId: 0,
             name: "The first step is to love your community. You're already crushing this!",
-            rating: 5,
             category: "How does it work?",
-            text: "What a magnificent view!",
-            author: "Tinus Lorvaldes",
-            date: "2018-10-25T16:30Z",
+            text: "Love your community!",
+            author: "Community Kanban",
             image: "/assets/images/men-hugging.jpg",
             description: "Community Kanban is a marketplace that provides technologist with the opportunity to gain experience while helping the community.",
             featured: true
         },
         {
             id: 1,
-            personaId: 0,
-            rating: 4,
-            text: "The campground was beautiful, but the bugs could bite sometimes.",
-            author: "Brennen Ech",
-            date: "2017-06-17T03:33Z",
+            personaId: 1,
+            text: "Tell us about the technology problem you are trying to solve.",
+            author: "Community Kanban",
             featured: false
         },
         {
             id: 2,
-            personaId: 0,
-            rating: 5,
-            text: "I caught a world-record-breaking trout here on my last visit.",
-            author: "McKenzie Sebastian",
-            date: "2017-06-17T03:33Z",
+            personaId: 1,
+            text: "Look through our the tech solutions we've accumulated. For example, if you are looking for a website, let us know if you see an example you like.",
+            author: "Community Kanban",
             featured: false
         },
         {
             id: 3,
-            personaId: 0,
-            rating: 5,
-            text: "A wonderful place to reconnect with nature.",
-            author: "Jordan Runn",
-            date: "2017-06-17T03:33Z",
+            personaId: 1,
+            text: "A Community Kanban Project Manager will reach out to you to help you get started.",
+            author: "Community Kanban",
             featured: false
         },
         {
             id: 4,
-            personaId: 0,
-            rating: 4,
-            text: "The stars at night were a revelation!",
-            author: "Ann Dabramov",
-            date: "2017-06-17T03:33Z",
-            featured: false
-        },
-        {
-            id: 5,
             personaId: 1,
-            rating: 4,
-            text: "The campground was beautiful, but the bugs could bite sometimes.",
-            author: "Brennen Ech",
-            date: "2017-06-17T03:33Z",
-            featured: false
-        },
-        {
-            id: 6,
-            personaId: 1,
-            rating: 5,
-            text: "I caught a world-record-breaking trout here on my last visit.",
-            author: "McKenzie Sebastian",
-            date: "2017-06-17T03:33Z",
-            featured: false
-        },
-        {
-            id: 7,
-            personaId: 1,
-            rating: 5,
-            text: "A wonderful place to reconnect with nature.",
-            author: "Jordan Runn",
-            date: "2017-06-17T03:33Z",
-            featured: false
-        },
-        {
-            id: 8,
-            personaId: 1,
-            rating: 4,
-            text: "The stars at night were a revelation!",
-            author: "Ann Dabramov",
-            date: "2017-06-17T03:33Z",
-            featured: false
-        },
-        {
-            id: 9,
-            personaId: 1,
-            rating: 5,
-            text: "What a magnificent view!",
-            author: "Tinus Lorvaldes",
-            date: "2017-06-17T03:33Z",
+            text: "Our community-oriented technologist will do their thing. We'll get to a great solution together and help you maintain it.",
+            author: "Community Kanban",
             featured: false
         },
         {

@@ -5,6 +5,7 @@ import {
     Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Input, Label
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+import { pureFinalPropsSelectorFactory } from 'react-redux/lib/connect/selectorFactory';
 
 class Header extends Component {
     constructor(props) {
@@ -42,18 +43,37 @@ class Header extends Component {
         return (
             <React.Fragment>
                 <Jumbotron fluid>
-                    <div className="container">
-                        <div className="row">
-                            <img src="assets/images/whitelogo.png"
-                                alt="logo"
-                                className="img-fluid mx-auto d-block"
-                                height="40%"
-                                width="40%"
-                            />
-                            <div className="col pt-2">
-                                <h1> Community Kanban </h1>
-                                <h3> You can't spell COMMMUNITY without I.T. </h3>
-                            </div>
+                    <div className="container pt-2 pb-2">
+                        <div className="row row-header justify-content-center center">
+                            <text className="display-4"
+                                style={{
+                                    fontFamily: "permanent-marker, cursive",
+
+                                }}>
+                                COMMUN
+                            </text>
+                            <text className="display-4"
+                                style={{
+                                    fontFamily: "permanent-marker, cursive",
+                                    color: "gold"
+
+                                }}>
+                                IT
+                            </text>
+                            <text className="display-4"
+                                style={{ fontFamily: "permanent-marker, cursive", }}>
+                                Y
+                            </text>
+                            <text> &nbsp;&nbsp;&nbsp;&nbsp; </text>
+                            <text className="display-4"
+                                style={{
+                                    fontFamily:
+                                        "permanent-marker, cursive",
+                                    outline: "white solid thick",
+                                    color: "gold"
+                                }}>
+                                kanban
+                            </text>
                         </div>
                     </div>
                 </Jumbotron>
@@ -124,7 +144,7 @@ class Header extends Component {
                         </Form>
                     </ModalBody>
                 </Modal>
-            </React.Fragment>
+            </React.Fragment >
         )
     }
 }

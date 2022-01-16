@@ -28,22 +28,22 @@ export const PERSONAS = [
             {
                 id: 2,
                 rating: 5,
-                text: "Look through our the tech solutions we've accumulated. For example, if you are looking for a website, let us know if you see an example you like.",
-                author: "McKenzie Sebastian",
+                text: "Look through our library of tech solutions. For example, if you are looking for a website, let us know if you see an example you like.",
+                author: "Community Kanban",
                 date: "2019-02-18T18:12Z"
             },
             {
                 id: 3,
                 rating: 5,
                 text: "A Community Kanban Project Manager will reach out to you to help you get started.",
-                author: "Jordan Runn",
+                author: "Community Kanban",
                 date: "2019-08-04T20:11Z"
             },
             {
                 id: 4,
                 rating: 4,
-                text: "We will do our thing. Provide us feedback on our progress and we'll get to a great solution together.",
-                author: "Ann Dabramov",
+                text: "We'll put together a great solution!",
+                author: "Community Kanban",
                 date: "2018-07-23T19:44Z"
             }
         ]

@@ -12,6 +12,8 @@ import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import SideBar from './SideBarComponent';
 
+
+
 const mapStateToProps = state => {
     return {
         personas: state.personas,

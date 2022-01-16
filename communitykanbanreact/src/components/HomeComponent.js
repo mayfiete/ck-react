@@ -6,6 +6,12 @@ import { Link } from 'react-router-dom'
 import Dropdown from 'reactstrap/lib/Dropdown';
 
 
+const throwKnownError = () => {
+    throw new Error('This is a known error');
+};
+
+
+
 
 // RenderCard.js
 function RenderCard({ item }) {
@@ -191,6 +197,20 @@ function Home(props) {
                     </div>
                 </div>
             </div>
+            <button onClick={throwKnownError}
+                style={{
+                    backgroundColor: "white",
+                    border: "1px solid white",
+                    borderRadius: "25px",
+                    outline: "none",
+                    color: "gray",
+                    fontSize: "1.25em",
+                    fontWeight: "bold",
+                    fontFamily: "Arial, Helvetica, sans-serif"
+                }}>
+                Sentry Test
+            </button>
+
 
         </React.Fragment >
     );

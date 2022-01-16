@@ -17,14 +17,14 @@ export const PROCESSES =
         {
             id: 1,
             personaId: 1,
-            text: "Tell us about the technology problem you are trying to solve.",
+            text: "Tell us about the technology problem you want to solve.",
             author: "Community Kanban",
             featured: false
         },
         {
             id: 2,
             personaId: 1,
-            text: "Look through our the tech solutions we've accumulated. For example, if you are looking for a website, let us know if you see an example you like.",
+            text: "Look through our library of tech solutions. For example, if you are looking for a website, let us know if you see an example you like.",
             author: "Community Kanban",
             featured: false
         },
@@ -38,7 +38,7 @@ export const PROCESSES =
         {
             id: 4,
             personaId: 1,
-            text: "Our community-oriented technologist will do their thing. We'll get to a great solution together and help you maintain it.",
+            text: "We'll work with our community-oriented technologist to create a great solution!",
             author: "Community Kanban",
             featured: false
         },
